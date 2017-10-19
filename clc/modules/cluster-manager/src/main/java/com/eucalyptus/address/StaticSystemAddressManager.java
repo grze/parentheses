@@ -131,7 +131,7 @@ public class StaticSystemAddressManager extends AbstractSystemAddressManager {
   @Override
   public void inheritReservedAddresses( List<Address> reservedAddresses ) {
     int allocCount = Addresses.getSystemReservedAddressCount( ) - reservedAddresses.size( );
-    LOG.debug( "Allocating additional " + allocCount + " addresses in static public addresing mode" );
+    LOG.debug( "Allocating additional " + allocCount + " addresses in static public addressing mode" );
     allocCount = Addresses.getInstance( ).listDisabledValues( ).size( ) < allocCount
       ? Addresses.getInstance( ).listDisabledValues( ).size( )
       : allocCount;
